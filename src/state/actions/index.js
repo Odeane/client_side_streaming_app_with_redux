@@ -22,9 +22,10 @@ export const signOut = () => {
   }
 }
 
-export const createStream = (title, description) => async dispatch => {
+export const createStream = (title, description) => async (dispatch, getstate) => {
 
-  let response = await streams.post('/streams', { title, description })
+  const { userId } = getstate().auth;
+  let response = await streams.post('/streams', { title, description, userId })
 
   dispatch({
     type: CREATE_STREAM, payload: response.data
