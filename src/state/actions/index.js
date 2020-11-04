@@ -1,4 +1,6 @@
 import streams from '../actions/apis/streams'
+import history from '../../history'
+
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -30,6 +32,7 @@ export const createStream = (title, description) => async (dispatch, getstate) =
   dispatch({
     type: CREATE_STREAM, payload: response.data
   })
+  history.push('/')
 }
 
 export const fetchStreams = () => async dispatch => {
@@ -38,7 +41,7 @@ export const fetchStreams = () => async dispatch => {
 
   dispatch({
     type: FETCH_STREAMS, payload: response.data
-  })
+  }) 
 }
 
 export const fetchStream = (id) => async dispatch => {
@@ -50,7 +53,7 @@ export const fetchStream = (id) => async dispatch => {
 }
 
 
-export const editStream = (id, {}) => async dispatch => {
+export const editStream = (id, { }) => async dispatch => {
   const response = await streams.put(`/streams/${id}`, {})
 
   dispatch({

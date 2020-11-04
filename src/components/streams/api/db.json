@@ -1,13 +1,13 @@
 {
   "streams": [
     {
-      "title": "sdfgsdfgsdfgs",
-      "description": "fdgsfgsfg",
+      "title": "Something Strange",
+      "description": "yes sir",
       "id": 1
     },
     {
-      "title": "sdfgsdfgsdfgs",
-      "description": "fdgsfgsfg",
+      "title": "Day and night",
+      "description": "I smoke the weed",
       "id": 2
     },
     {
@@ -26,6 +26,24 @@
       "description": "Odeane made",
       "userId": "118352175311833840202",
       "id": 5
+    },
+    {
+      "title": "On mamas toty",
+      "description": "We Lityy",
+      "userId": "118352175311833840202",
+      "id": 6
+    },
+    {
+      "title": "On mamas toty",
+      "description": "We Lityy",
+      "userId": "118352175311833840202",
+      "id": 7
+    },
+    {
+      "title": "We should always flip",
+      "description": "Program nav",
+      "userId": "118352175311833840202",
+      "id": 8
     }
   ]
 }
