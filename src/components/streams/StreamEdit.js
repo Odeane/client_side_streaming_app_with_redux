@@ -10,18 +10,18 @@ class StreamEdit extends React.Component {
 
   onSubmit = (formvalues) => {
     this.props.editStream(this.props.match.params.id, formvalues)
-}
+  }
 
   render() {
     if (!this.props.stream) {
       return <div>Loading...</div>;
     }
-
+    
     return (
-      
+
       <div>
         <h3>Edit a Stream</h3>
-        <StreamForm initialValues={_.pick(this.props.streams, 'title', 'description')} onSubmit={ this.onSubmit}/>
+        <StreamForm initialValues={_.pick(this.props.stream, 'title', 'description')} onSubmit={this.onSubmit} />
       </div>
     )
   }
