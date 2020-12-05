@@ -10,10 +10,8 @@ import { deleteStream, fetchStream } from '../../state/actions'
 class StreamDelete extends React.Component {
 
   componentDidMount() {
-
     this.props.fetchStream(this.props.match.params.id)
     // 'http://localhost:3000/streams/delete/4'
-
   }
 
   renderActions() {
