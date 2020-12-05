@@ -35,6 +35,10 @@ constructor(props) {
     this.buildPlayer()
   }
 
+componentWillUnmount() {
+    this.player.destroy()
+  }
+
   render() {    
     if (!this.props.stream) {
       return <div>loading...</div>
